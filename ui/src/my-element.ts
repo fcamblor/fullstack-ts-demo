@@ -1,7 +1,9 @@
 import { LitElement, css, html } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import litLogo from './assets/lit.svg'
+import {Hello} from '@shared/domains'
 
+const hello: Hello = new Hello();
 /**
  * An example element.
  *
@@ -37,6 +39,7 @@ export class MyElement extends LitElement {
         <button @click=${this._onClick} part="button">
           count is ${this.count}
         </button>
+        ${hello.who}
       </div>
       <p class="read-the-docs">${this.docsHint}</p>
     `
