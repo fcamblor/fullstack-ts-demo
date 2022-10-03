@@ -1,0 +1,15 @@
+{
+  "name": "fullstack-ts-demo-aggregator",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build": "cd ui && npm ci && npm run build && cd ../srv && npm ci && npm run build",
+    "dev": "concurrently --kill-others \"cd srv && npm run start:debug\" \"sleep 4 && cd ui && npm run dev\""
+  },
+  "devDependencies": {
+    "concurrently": "7.2.0"
+  }
+}
