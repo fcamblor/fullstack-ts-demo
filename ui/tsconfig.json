@@ -16,8 +16,13 @@
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
     "useDefineForClassFields": false,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "paths": {
+      "@shared/*": ["../shared/dist/mjs/*"]
+    }
   },
   "include": ["src/**/*.ts"],
-  "references": []
+  "references": [
+    { "path": "../shared/src/tsconfig.json" }
+  ]
 }
