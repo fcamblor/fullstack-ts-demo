@@ -1,0 +1,4 @@
+#!/bin/bash
+
+`dirname $0`/fixup-dist-cjs-module
+`dirname $0`/fixup-dist-mjs-module
